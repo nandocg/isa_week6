@@ -1,7 +1,7 @@
 <?php
-$host = '127.0.0.1';#getenv("MYSQL_SERVICE_HOST");
+$host = getenv("MYSQL_SERVICE_HOST");
 $username = 'root';
-$password = "ubayaweek6";
+$password = "ubaya";
 $dbname = "mydb";
 $conn = new mysqli($host,$username,$password,$dbname);
 if($conn->connect_error){
