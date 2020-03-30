@@ -1,7 +1,7 @@
 <?php
 $host = getenv("MYSQL_SERVICE_HOST");
 $username = 'root';
-$password = "4079Master";
+$password = "clouddb";
 $dbname = "mydb";
 $conn = new mysqli($host,$username,$password,$dbname);
 if($conn->connect_error){
