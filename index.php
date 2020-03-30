@@ -19,7 +19,8 @@
 	 	<?php
 	 		$query = "SELECT * FROM driver";
 	 		$result = $conn->query($query);
-	 		print_r($result);
+	 		$rows = $result->fetch_assoc();
+	 		var_dump($rows);
 	 	?>
 	 </table>
 </body>
