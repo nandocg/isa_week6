@@ -1,6 +1,6 @@
 <?php
 $host = getenv("MYSQL_SERVICE_HOST");
-$username = 'nandocg';
+$username = "nandocg";
 $password = "ubaya";
 $dbname = "mydb";
 $conn = new mysqli($host,$username,$password,$dbname);
