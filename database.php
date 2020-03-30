@@ -1,5 +1,5 @@
 <?php
-$host = getenv("MYSQL_SERVICE_HOST");
+$host = 'localhost';
 $username = 'root';
 $password = "clouddb";
 $dbname = "mydb";
