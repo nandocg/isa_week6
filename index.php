@@ -37,13 +37,16 @@
 	 		<th>License</th>
 	 	</tr>
 	 	<?php
-	 		$query = "SELECT * FROM driver";
+	 		$query = "SELECT * FROM Driver";
 	 		$result = $conn->query($query);
-
-	 		while($rows = $result->fetch_assoc())
+	 		if($result)
 	 		{
-	 			echo "<tr><td>".$rows['id']."</td><td>".$rows['name']."</td><td>".$rows['license']."</td></tr>";
+	 			while($rows = $result->fetch_assoc())
+	 			{
+	 				echo "<tr><td>".$rows['id']."</td><td>".$rows['name']."</td><td>".$rows['license']."</td></tr>";
+	 			}
 	 		}
+	 		
 	 	?>
 	 </table>
 </body>
